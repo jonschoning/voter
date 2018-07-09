@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    @using (Html.BeginForm("IndexPost", "Home", FormMethod.Post)) {
+    <div class="">
+        <div class="row">
+            <div class="col-12 add-wrap d-flex justify-content-around">
+                <input class="add add1" type="submit" name="add_1" value="1" />
+                <input class="add add2" type="submit" name="add_2" value="2" />
+                <input class="add add3" type="submit" name="add_3" value="3" />
+            </div>
+        </div>
+    </div>
+    }
+</body>
+</html>
